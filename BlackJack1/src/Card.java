@@ -1,0 +1,24 @@
+/**
+ * Klasa reprezentuje pojedynczą kartę
+ */
+public class Card {
+    private Suit cardSuit;
+    private Value cardValue;
+
+    public Card(Suit suit, Value value){
+        cardSuit=suit;
+        cardValue=value;
+    }
+
+    public Suit getCardSuit(){
+        return cardSuit;
+    }
+
+    public Value getCardValue(){
+        return cardValue;
+    }
+
+    public String toString(){
+        return cardValue.toString()+" "+cardSuit.toString();
+    }
+}
